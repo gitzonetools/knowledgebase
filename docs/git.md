@@ -3,20 +3,23 @@
 
 type in a terminal:
 
-    $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-    # Creates a new ssh key, using the provided email as a label
-    # Generating public/private rsa key pair.
+```sh
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+# Creates a new ssh key, using the provided email as a label
+# Generating public/private rsa key pair.
+```
 
-store the result with a unique filename in the accounts .ssh directory
+> TIP: store the result with a unique filename in your accounts ~/.ssh directory
 
-then use
+then copy the key to the public desired machine
 
-    ssh-copy-id -i [yourcustomname].pub [username]@[serverhost]
-    
-You'll be guided by a wizard through the creation of a SSH key.
+```sh
+ssh-copy-id -i [yourcustomname].pub [username]@[serverhost]
+```
 
 ### Make current commit the intial commit:
-```
+
+```sh
 git checkout --orphan newBranch
 git add -A  # Add all files and commit them
 git commit
