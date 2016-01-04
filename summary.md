@@ -1,9 +1,9 @@
 * [Overview](docs/overview-md)
 * [AngularJS](angularjs) | JS Browser App Framework
-* [Apache](apache.md) | Server Software
-* [Bower](bower.md) | Package Manager for JS client side code
+* [Apache](docs/apache.md) | Server Software
+* [Bower](docs/bower.md) | Package Manager for JS client side code
 * [CoffeeScript](#coffeescript) | JS preprocessor
-* [Docker](docker.md) | Container Platform for containerizing apps
+* [Docker](docs/docker.md) | Container Platform for containerizing apps
 * [Fileoperations](#fileoperations) | standard Linux file operations
 * [Git](#git) | Version Control Software
 * [MkDocs](#mkdocs) | Documentation Software
