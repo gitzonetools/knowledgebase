@@ -5,8 +5,7 @@
 * [CoffeeScript](#coffeescript) | JS preprocessor
 * [Docker](docs/docker.md) | Container Platform for containerizing apps
 * [Fileoperations](#fileoperations) | standard Linux file operations
-* [Git](#git) | Version Control Software
-* [MkDocs](#mkdocs) | Documentation Software
+* [Git](docs/git.md) | Version Control Software
 * [MongoDB](#mongodb) | Database Software
 * [Mongoose](#mongoose) | MongoDB for Node.js Library
 * [Nginx](#nginx) | Server Software
