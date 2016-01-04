@@ -23,3 +23,14 @@ git commit
 git branch -D master  # Deletes the master branch
 git branch -m master  # Rename the current branch to master
 ```
+
+### Go one commit back and ommit the latest commit
+
+```
+git reset --hard HEAD~1
+git push origin <branchname>
+```
+
+### Show the branch you are in in the CLI
+Have a look here:
+[https://github.com/jimeh/git-aware-prompt](https://github.com/jimeh/git-aware-prompt)
