@@ -1,7 +1,7 @@
 ## Docker
 ### Installing Docker
 Installing docker is fairly easy. Simply run the following command
-(The script will ask for for your sudo password if required)
+(The script will ask for your sudo password if required)
 
     wget -qO- https://get.docker.com/ | sh
     
