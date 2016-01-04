@@ -4,8 +4,7 @@
 * [Bower](bower.md) | Package Manager for JS client side code
 * [CoffeeScript](#coffeescript) | JS preprocessor
 * [Docker](docker.md) | Container Platform for containerizing apps
-* [Fileoperations](#fileoperations) | Standard Linux
-* Fileoperations
+* [Fileoperations](#fileoperations) | Standard Linux Fileoperations
 * [Git](#git) | Version Control Software
 * [MkDocs](#mkdocs) | Documentation Software
 * [MongoDB](#mongodb) | Database Software
