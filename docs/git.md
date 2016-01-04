@@ -9,7 +9,7 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 # Generating public/private rsa key pair.
 ```
 
-> TIP: store the result with a unique filename in your accounts ~/.ssh directory
+> TIP: store the result with a unique filename in your accounts `~/.ssh` directory
 
 then copy the key to the public desired machine
 
