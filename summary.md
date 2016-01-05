@@ -7,11 +7,11 @@
 * [Git](docs/git.md)
 * [MongoDB](#mongodb)
 * [Mongoose](#mongoose)
-* [Nginx](#nginx)
+* [Nginx](docs/nginx.md)
 * [Ruby](#ruby)
 * [SASS](#sass)
 * [SymLink](#symlink)
-* [Tar](#tar)
+* [Tar](docs/tar.md)
 * [TMUX](docs/tmux.md)
 * [TypeScript](docs/typescript.md) | 
 * [UglifyJS](#uglifyjs)
