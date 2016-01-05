@@ -20,5 +20,6 @@ Then install a node version like this:
 ```sh
 nvm install v4.2.4
 nvm alias default v4.2.4
-# first line installs node in version 
+# first line installs node in version
+# second line makes v4.2.4 the default version when starting bash
 ```
