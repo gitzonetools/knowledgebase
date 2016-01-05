@@ -15,3 +15,10 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.30.1/install.sh | b
 # For latest version of nvm please see the official repo at:
 # https://github.com/creationix/nvm
 ```
+Then install a node version like this:
+
+```sh
+nvm install v4.2.4
+nvm alias default v4.2.4
+# first line installs node in version 
+```
