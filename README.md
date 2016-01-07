@@ -1,6 +1,6 @@
 # Knowledgebase
 
-**compiled version**  
+**compiled version:**  
 https://knowledgebase.git.zone/
 
 
