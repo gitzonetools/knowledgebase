@@ -6,7 +6,7 @@ Name | Description
 [Apache](apache.md) | Server Software
 [Bower](bower.md) | Package Manager for JS client side code
 [Docker](docker.md) | Container Platform for containerizing apps
-[Git](#git) | Version Control Software
+[Git](git.md) | Version Control Software
 [LinuxCommands](linuxcommands.md) | Standard Linux Fileoperations
 [MongoDB](mongodb.md) | Database Software
 [Mongoose](mongoose.md) | MongoDB for Node.js Library
