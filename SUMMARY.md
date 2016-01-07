@@ -21,4 +21,6 @@
     * [TypeScript](docs/devtools/typescript.md) | 
     * [UglifyJS](docs/devtools/uglifyjs)
 * WebApps 
-    * [GitBook.com](docs/webapps/gitbook.md) 
+    * [GitBook.com](docs/webapps/gitbook.md)
+* Legal
+    * [Cookies](docs/legal/cookies.md) 
