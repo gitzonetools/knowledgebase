@@ -6,14 +6,13 @@ Name | Description
 [Apache](apache.md) | Server Software
 [Bower](bower.md) | Package Manager for JS client side code
 [Docker](docker.md) | Container Platform for containerizing apps
-[LinuxCommands](#linuxcommands) | Standard Linux Fileoperations
 [Git](#git) | Version Control Software
-[MongoDB](#mongodb) | Database Software
-[Mongoose](#mongoose) | MongoDB for Node.js Library
-[Nginx](#nginx) | Server Software
-[Ruby](#ruby) | Ruby Interpreter
-[SASS](#sass) | CSS preprocessor
-[SymLink](#symlink) | file system alias
+[LinuxCommands](linuxcommands.md) | Standard Linux Fileoperations
+[MongoDB](mongodb.md) | Database Software
+[Mongoose](mongoose.md) | MongoDB for Node.js Library
+[Nginx](nginx.md) | Server Software
+[Ruby](ruby.md) | Ruby Interpreter
+[SASS](sass.md) | CSS preprocessor
 [Tar](#tar) | File Archive Program
 [TypeScript](typescript.md) | JS preprocessor
 [TMUX](#tmux) | Server Side Console Manager
