@@ -1,7 +1,6 @@
 # Summary
 
-* Dev Tools
-    * [Overview](docs/devtools/overview.md)
+* [Dev Tools](docs/devtools/index.md)
     * [AngularJS](docs/devtools/angularjs)
     * [Apache](docs/devtools/apache.md)
     * [AppEngine](docs/devtools/appengine.md)
