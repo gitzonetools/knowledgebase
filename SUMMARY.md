@@ -1,6 +1,6 @@
 # Summary
 
-* [Home](index.md)
+* [Start](index.md)
 * [Dev Tools](docs/devtools/index.md)
    * [AngularJS](docs/devtools/angularjs)
    * [Apache](docs/devtools/apache.md)
