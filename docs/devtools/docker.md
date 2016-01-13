@@ -29,3 +29,9 @@ docker rm $(docker ps -q -f status=exited)
 ```
 $ sudo docker attach loving_heisenberg #by Name
 ```
+
+## Docker Server Setups
+### nginx-proxy
+[nginx-proxy](https://hub.docker.com/r/jwilder/nginx-proxy/) is a neat way to manage multiple applications on the same server. Docker makes sure that each application can work with its own platform serving stack while the nginx-proxy docker container makes sure that the different containers all get their related traffic.
+
+
