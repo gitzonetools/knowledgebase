@@ -1,9 +1,7 @@
 ## Nginx
 Nginx is a lightweight, easy to configure host software and we recommend it for use together with nodejs and python.
 
-### Use it with mojo.io
-we highly recommend to use nginx with our own static site generator named **mojo.io** :)
-
+### nginx config for static content:
 Here is a bestpractice standard config file that will serve the site/ directory of your project:
 
     server {
@@ -38,3 +36,5 @@ Here is a bestpractice standard config file that will serve the site/ directory 
         }
     }
 
+### nginx with Docker
+[Read on here](docker.md#nginx-proxy) to get a neat nginx setup for docker containers.
