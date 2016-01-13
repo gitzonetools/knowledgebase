@@ -37,4 +37,4 @@ Here is a bestpractice standard config file that will serve the site/ directory 
     }
 
 ### nginx with Docker
-[Read on here](docker.md#nginx-proxy) to get a neat nginx setup for docker containers.
+[Read on here](docker.md#nginxproxy) to get a neat nginx setup for docker containers.
