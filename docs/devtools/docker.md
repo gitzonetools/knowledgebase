@@ -18,7 +18,9 @@ You then can create a actual container from that image that can have a specific 
 
 **list all running docker containers**
 
+```sh
 docker ps
+```
 
 **Remove all stopped containers**
 
