@@ -38,3 +38,10 @@ Here is a bestpractice standard config file that will serve the site/ directory 
 
 ### nginx with Docker
 [Read on here](docker.md#nginxproxy) to get a neat nginx setup for docker containers.
+
+### fix permissions of serving directory
+this assumes that your nginx runs as user `www-data`
+```sh
+sudo chown -cR www-data:www-data /srv/content/
+sudo chown -cR www-data:www-data /var/www/
+```
