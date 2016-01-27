@@ -11,6 +11,7 @@
    * [Git](docs/devtools/git.md)
    * [MongoDB](docs/devtools/mongodb.md)
    * [Mongoose](docs/devtools/mongoose.md)
+   * [MySQL](docs/devtools/mysql.md)
    * [Nginx](docs/devtools/nginx.md)
    * [NodeJS](docs/devtools/nodejs.md)
    * [Ruby](docs/devtools/ruby.md)
