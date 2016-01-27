@@ -1,4 +1,4 @@
-## Nginx
+# Nginx
 Nginx is a lightweight, easy to configure host software and we recommend it for use together with nodejs and python.
 
 ### nginx config for static content:
