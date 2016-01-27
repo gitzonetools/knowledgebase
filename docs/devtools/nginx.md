@@ -42,6 +42,5 @@ Here is a bestpractice standard config file that will serve the site/ directory 
 ### fix permissions of serving directory
 this assumes that your nginx runs as user `www-data`
 ```sh
-sudo chown -cR www-data:www-data /srv/content/
-sudo chown -cR www-data:www-data /var/www/
+sudo chown -cR www-data:www-data /servingDir/
 ```
