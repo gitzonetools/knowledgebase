@@ -16,6 +16,7 @@
    * [NodeJS](docs/devtools/nodejs.md)
    * [Ruby](docs/devtools/ruby.md)
    * [SASS](docs/devtools/sass.md)
+   * [SSH](docs/devtools/ssh.md)
    * [SymLink](docs/devtools/symlink)
    * [Tar](docs/devtools/tar.md)
    * [TMUX](docs/devtools/tmux.md)
