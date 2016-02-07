@@ -1,5 +1,19 @@
 {
     "structure": {
         "readme": "index.md"
+    },
+    "plugins": [
+        "disqus",
+        "tonic",
+        "edit-link"
+    ],
+    "pluginsConfig": {
+        "edit-link": {
+            "base": "https://github.com/GitZoneTools/knowledgbase/edit/master/",
+            "label": "Edit This Page"
+        },
+        "disqus": {
+            "shortName": "mojoio-docs"
+        }
     }
 }
