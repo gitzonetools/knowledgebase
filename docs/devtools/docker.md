@@ -7,6 +7,13 @@ Installing docker is fairly easy. Simply run the following command
     
 If it prompts that you haven't yet installed wget, do so first and run the command above it again
 
+Then you should install docker-compose:
+
+    curl -L https://github.com/docker/compose/releases/download/1.6.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+    chmod +x /usr/local/bin/docker-compose
+
+> **Note:** the latest release for **docker-compose** is: [![GitHub version](https://badge.fury.io/gh/docker%2Fcompose.svg)](https://badge.fury.io/gh/docker%2Fcompose)
+
 ### Managing containers
 There are various tools out there to take care of that. However if you just run a few containers it might be easier to just learn a few commands directly from docker.
 
