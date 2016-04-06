@@ -12,7 +12,7 @@ If it prompts that you haven't yet installed wget, do so first and run the comma
 Docker-Compose makes it easy to setup more complex configurations. It is highly recommended to install it.
 
 ```
-# Get permissions to install Docker COmpose
+# Get permissions to install Docker Compose
 sudo -i
 
 # Download Docker Compose
