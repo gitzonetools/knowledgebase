@@ -20,6 +20,9 @@ curl -L https://github.com/docker/compose/releases/download/1.6.2/docker-compose
 
 # Give it executable rights
 chmod +x /usr/local/bin/docker-compose
+
+# return to previous rights
+exit
 ```
 > **Note:** the latest release for **docker-compose** is: [![GitHub version](https://badge.fury.io/gh/docker%2Fcompose.svg)](https://badge.fury.io/gh/docker%2Fcompose)
 
