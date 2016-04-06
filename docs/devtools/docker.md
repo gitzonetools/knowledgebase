@@ -5,7 +5,8 @@ Installing docker is fairly easy. Simply run the following command
 
     curl -sSL https://get.docker.com/ | sh
     
-If it prompts that you haven't yet installed wget, do so first and run the command above it again
+If it prompts that you haven't yet installed curl, do so first and run the command above it again.  
+If it complains about SSL try installing the ca-certificates package.
 
 ### Installing Docker-Compose
 
