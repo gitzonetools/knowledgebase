@@ -21,13 +21,13 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 openssl base64 -A -in id_rsa -out id_rsa64
 ```
 
-then store it in an ENV Variable.
+then store it in an ENV Variable (for example `$MY_SSHKEY`).
 
 then when you need to read the key:
 
 ```shell
 # writes the key to disk in base64 encoding
-echo $RESIN_SSHKEY > ~/.ssh/id_rsa64
+echo $MY_SSHKEY > ~/.ssh/id_rsa64
 
 # converts it to valid SSH key
 openssl base64 -d -A -in ~/.ssh/id_rsa64 -out ~/.ssh/id_rsa 
