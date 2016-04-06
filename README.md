@@ -1,9 +1,9 @@
 # Knowledgebase
 
-**compiled version:**  
+### compiled version: 
 https://knowledgebase.git.zone/
 
-**npm tool**
+### npm tool
 
 install with
 
