@@ -20,3 +20,5 @@ openssl x509 -req -days 365 -in ./newssl/server.csr -signkey ./newssl/server.key
 echo "SSL script finished"
 
 ```
+
+> Note: The script above creates a self signed certificate, which will throw trust errors when used in common browsers like Google Chrome, Apple Safari or Mozilla Direfox. You cann create free valid certificates using letsencrypt.
