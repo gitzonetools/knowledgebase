@@ -7,7 +7,7 @@ Installing docker is fairly easy. Simply run the following command
     
 If it prompts that you haven't yet installed wget, do so first and run the command above it again
 
-### Installint Docker-Compose
+### Installing Docker-Compose
 
 Docker-Compose makes it easy to setup more complex configurations. It is highly recommended to install it.
 
