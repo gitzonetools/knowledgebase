@@ -10,6 +10,7 @@
        * [Gitlab CI](docs/devtools/ci/gitlab-ci.md)
        * [Travis CI](docs/devtools/ci/travis.md)
        * [Drone CI](docs/devtools/ci/drone.md)
+   * [CoreOS](docs/devtools/coreos.md)
    * [Docker](docs/devtools/docker.md)
    * [Linux Commands](docs/devtools/linuxcommands.md)
    * [Git](docs/devtools/git.md)
