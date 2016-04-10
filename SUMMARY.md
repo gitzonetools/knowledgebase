@@ -20,6 +20,7 @@
    * [Nginx](docs/devtools/nginx.md)
    * [NodeJS](docs/devtools/nodejs.md)
    * [Ruby](docs/devtools/ruby.md)
+   * [rsync](docs/devtools/rsync.md)
    * [SASS](docs/devtools/sass.md)
    * [SSH](docs/devtools/ssh.md)
    * [SSL](docs/devtools/ssl.md)
