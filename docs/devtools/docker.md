@@ -42,7 +42,7 @@ You then can create a actual **container** from that image that can have a speci
 docker ps
 ```
 
-*Manage containers and images **
+**Manage containers and images**
 
 ```shell
 # Remove all containers
