@@ -32,9 +32,9 @@ There are various tools out there to take care of that. However if you just run 
 
 **The difference between image tags and container names**
 
-Docker can be a bi tricky when it comes to terminology. A image is being built from a Dockerfile. This image can have tags specified by option -t.
+Docker can be a bit tricky when it comes to terminology: An **image** is being built from a Dockerfile. This image can have tags specified by option -t.
 
-You then can create a actual container from that image that can have a specific name. You can use that name to control the container. e.g. `docker start labs`, `docker stop labs`.
+You then can create a actual **container** from that image that can have a specific name. You can use that name to control the container. e.g. `docker start labs`, `docker stop labs`.
 
 **list all running docker containers**
 
@@ -42,15 +42,25 @@ You then can create a actual container from that image that can have a specific 
 docker ps
 ```
 
-**Remove all stopped containers**
+*Manage containers and images **
 
-```
+```shell
+# Remove all containers
+docker rm $(docker ps -a -q)
+
+# Remove containers that are not currently running
 docker rm $(docker ps -q -f status=exited)
-```
 
-```
+# Remove all images
+docker rmi $(docker images -q)
+
+# attach current shell/bash to running containers
 $ sudo docker attach loving_heisenberg #by Name
 ```
+
+**Remove all images**
+
+
 
 ## Docker Server Setups
 ### nginx-proxy
