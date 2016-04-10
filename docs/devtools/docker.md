@@ -67,3 +67,6 @@ $ sudo docker attach loving_heisenberg #by Name
 [nginx-proxy](https://hub.docker.com/r/jwilder/nginx-proxy/) is a neat way to manage multiple applications on the same server. Docker makes sure that each application can work with its own platform serving stack while the nginx-proxy docker container makes sure that the different containers all get their related traffic.
 
 
+# Links
+Some commands:  
+http://stackoverflow.com/questions/17665283/how-does-one-remove-an-image-in-docker
