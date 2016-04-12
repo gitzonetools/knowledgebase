@@ -11,7 +11,7 @@
     "pluginsConfig": {
         "edit-link": {
             "base": "https://github.com/GitZoneTools/knowledgbase/edit/master/",
-            "label": "contribute to this article
+            "label": "contribute to this article"
         },
         "disqus": {
             "shortName": "gitzone-knowledgebase"
