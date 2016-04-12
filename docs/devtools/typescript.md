@@ -4,5 +4,5 @@ Here is a cool video that clears up how to use modules in TypeScript:
 
 ### Links
 Observables:  
-https://egghead.io/lessons/rxjs-creating-an-observable
+https://egghead.io/lessons/rxjs-creating-an-observable  
 https://egghead.io/lessons/rxjs-rxjs-observables-vs-promises
