@@ -1,4 +1,7 @@
-## Git
+# Git
+git is a versioning tool for source code.
+
+## configure git
 ### How to generate SSH Key for Github/Bitbucket
 
 type in a terminal:
@@ -16,7 +19,14 @@ then copy the key to the public desired machine
 ```sh
 ssh-copy-id -i [yourcustomname].pub [username]@[serverhost]
 ```
+### Tell git who you are
 
+```shell
+git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
+
+## Tips and Tricks
 ### Make current commit the intial commit:
 
 ```sh
