@@ -23,7 +23,7 @@ ssh-copy-id -i [yourcustomname].pub [username]@[serverhost]
 
 ```shell
 git config --global user.name "John Doe"
-$ git config --global user.email johndoe@example.com
+git config --global user.email johndoe@example.com
 ```
 
 ## Tips and Tricks
