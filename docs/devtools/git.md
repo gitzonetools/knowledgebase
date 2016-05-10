@@ -2,7 +2,7 @@
 git is a versioning tool for source code.
 
 ## configure git
-### How to generate SSH Key for Github/Bitbucket
+### Generate SSH Key
 
 type in a terminal:
 
