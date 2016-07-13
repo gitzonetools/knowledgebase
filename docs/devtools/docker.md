@@ -60,7 +60,12 @@ $ sudo docker attach loving_heisenberg #by Name
 
 **Remove all images**
 
+## Docker toolbox
+point docker-machine to the right virtualbox instance
 
+```shell
+docker-machine env --shell cmd default
+```
 
 ## Docker Server Setups
 ### nginx-proxy
