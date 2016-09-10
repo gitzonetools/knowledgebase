@@ -3,6 +3,11 @@ Compressed Knowledge by Lossless GmbH
 
 This page gets you started with important tips on how to setup common dev tools on your Debian/Ubuntu/MacOSX machine.
 
+### Structure
+The knowledge base is written as gitbook and available from https://knowledgebase.git.zone/gitbook/
+
+It contains the following main sections:
+
 | Section | Description |
 | --- | --- |
 | [DevTools](https://knowledgebase.git.zone/gitbook/docs/devtools/index.html) | A comprehensive of overview of modern devtools and how to get started with using them. |
