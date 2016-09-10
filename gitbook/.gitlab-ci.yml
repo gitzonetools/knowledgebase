@@ -1,0 +1,9 @@
+image: hosttoday/ht-docker-node:npmpage
+
+pages:
+  script:
+  - npmpage --host gitlab
+  artifacts:
+    expire_in: 1 week
+    paths:
+    - public
