@@ -1,8 +1,10 @@
-image: hosttoday/ht-docker-node:npmpage
+image: hosttoday/ht-docker-node:npmci
 
 pages:
   script:
-  - npmpage --host gitlab
+  - npmci command npm install -g gitbook-cli
+  - npmci command gitbook install ./gitbook
+  - npmci command gitbook build ./gitbook ./public
   artifacts:
     expire_in: 1 week
     paths:
