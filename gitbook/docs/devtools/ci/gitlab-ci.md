@@ -7,6 +7,6 @@
 
 To see/edit the config use the following command:
 
-```shell
+```sh
 sudo nano /etc/gitlab-runner/config.toml
 ```
