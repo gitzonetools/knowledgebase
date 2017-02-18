@@ -4,8 +4,9 @@
     },
     "plugins": [
         "disqus",
-        "tonic",
         "edit-link",
+        "highlight",
+        "tonic",
         "youtube"
     ],
     "pluginsConfig": {
