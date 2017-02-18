@@ -11,7 +11,7 @@
     ],
     "pluginsConfig": {
         "edit-link": {
-            "base": "https://github.com/GitZoneTools/knowledgbase/edit/master/",
+            "base": "https://gitlab.com/gitzone/knowledgebase/edit/master/",
             "label": "contribute to this article"
         },
         "disqus": {
