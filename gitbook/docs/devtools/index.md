@@ -3,7 +3,6 @@
 Name | Description
 --- | ---
 [AngularJS](angular.md) | JS Browser App Framework
-[Apache](apache.md) | Server Software
 [Bower](bower.md) | Package Manager for JS client side code
 [Docker](docker.md) | Container Platform for containerizing apps
 [Git](git.md) | Version Control Software
