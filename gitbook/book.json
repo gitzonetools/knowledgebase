@@ -1,19 +1,23 @@
 {
-    "structure": {
-        "readme": "index.md"
+  "structure": {
+    "readme": "index.md"
+  },
+  "plugins": [
+    "disqus",
+    "edit-link",
+    "gtm",
+    "youtube"
+  ],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://gitlab.com/gitzone/knowledgebase.git.zone/edit/master/gitbook/",
+      "label": "contribute to this article"
     },
-    "plugins": [
-        "disqus",
-        "edit-link",
-        "youtube"
-    ],
-    "pluginsConfig": {
-        "edit-link": {
-            "base": "https://gitlab.com/gitzone/knowledgebase.git.zone/edit/master/gitbook/",
-            "label": "contribute to this article"
-        },
-        "disqus": {
-            "shortName": "knowledgebase-git-zone"
-        }
+    "disqus": {
+      "shortName": "knowledgebase-git-zone"
+    },
+    "gtm": {
+      "token": "GTM-WJNFFPC"
     }
+  }
 }
