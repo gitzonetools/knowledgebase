@@ -5,6 +5,8 @@ pages:
   - npmci command npm install -g gitbook-cli
   - npmci command gitbook install ./gitbook
   - npmci command gitbook build ./gitbook ./public
+  tags:
+    - docker
   artifacts:
     expire_in: 1 week
     paths:
