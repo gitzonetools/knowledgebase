@@ -9,12 +9,12 @@
     * [GitLab CI](docs/ci/gitlab-ci-md)
 * Cluster
     * [Docker](docs/cluster/docker.md)
-    * [Kubernetes](docs/code_management/kubernetes.md)
+    * [Kubernetes](docs/cluster/kubernetes.md)
 * Code Management 
     * [Bower](docs/code_management/bower.md)
     * [Git](docs/code_management/git.md)
 * Continuous Integration
-    * [Gitlab CI](docs/devtools/ci/gitlab-ci.md)
+    * [Gitlab CI](docs/ci/gitlab-ci.md)
 * Database
     * [MongoDB](docs/database/mongodb.md)
     * [MySQL](docs/database/mysql.md)
