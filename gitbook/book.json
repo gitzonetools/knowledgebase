@@ -11,7 +11,7 @@
   "pluginsConfig": {
     "edit-link": {
       "base": "https://gitlab.com/gitzone/knowledgebase.git.zone/edit/master/gitbook/",
-      "label": "contribute to this article"
+      "label": "contribute"
     },
     "disqus": {
       "shortName": "knowledgebase-git-zone"
