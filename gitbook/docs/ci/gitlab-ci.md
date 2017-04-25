@@ -1,5 +1,14 @@
 # Gitlab CI
 
+## Positive
+1. Scale automatically on demand
+1. Runs entirely in docker
+1. 
+
+## Negative
+1. Basically none
+
+
 ### Links:
 * http://doc.gitlab.com/ee/ci/yaml/README.html
 * https://gitlab.com/gitlab-org/gitlab-ci-multi-runner
