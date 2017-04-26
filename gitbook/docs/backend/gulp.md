@@ -12,7 +12,12 @@ Gulp is an awesome streaming build system built on nodejs. It utilizes node stre
 1. Tool sometimes seems stuck with an old inefiicient dependency tree
 1. Too much boilerplate: We usually like it maintainable and good by convention over configuration
 
-## Our appoach at Lossless
-1. We wrote a really lightweight gulp replacement called smartgulp
-1. We compose streams with our own smartstream that handles errors with feedback like a champ
-1. We take the pain out of plugins with our gulp-function plugins: With support for promises.
+## Our approach at Lossless
+1. We wrote a really lightweight gulp replacement called [smartgulp](https://pushrocks.gitlab.io/smartgulp)
+1. We compose streams with our own [smartstream](https://pushrocks.gitlab.io/smartstream) that handles errors with feedback like a champ
+1. We take the pain out of plugins with our [gulp-function](https://pushrocks.gitlab.io/gulp-function) plugins: With support for promises.
+
+## Watch and learn
+
+
+## Links to learn more

@@ -13,6 +13,8 @@
 * Code Management 
     * [Bower](docs/code_management/bower.md)
     * [Git](docs/code_management/git.md)
+    * [Npm](docs/code_management/npm.md)
+    * [Yarn](docs/code_management/yarn.md)
 * Continuous Integration
     * [Gitlab CI](docs/ci/gitlab-ci.md)
 * Database
@@ -22,7 +24,6 @@
     * [Angular](docs/frontend/angular.md) (> 2.x.x)
     * [Polymer](docs/frontend/polymer.md)
     * [SASS](docs/devtools/sass.md)
-* Legal
 * Linux
     * [Linux Commands](docs/linux/linuxcommands.md)
     * [rsync](docs/devtools/rsync.md)
@@ -32,6 +33,10 @@
     * [Tar](docs/linux/tar.md)
     * [TMUX](docs/linux/tmux.md)
     * [TypeScript](docs/devtools/typescript.md)
+* Programming
+    * [TypeScript](docs/code_management/typescript.md)
+* Tracking
+    * [Cookie](docs/code_management/cookie.md)
 * WebApps
     * [WebApps](docs/webapps/index.md)
     * [GitBook.com](docs/webapps/gitbook.md)

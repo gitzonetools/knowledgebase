@@ -1,4 +1,15 @@
-## Docker
+# Docker
+
+## Positive
+
+## Negative
+
+## How we approach it at Lossless
+
+## Links to learn more
+
+## Some handy stuff
+
 ### Installing Docker
 Installing docker is fairly easy. Simply run the following command
 (The script will ask for your sudo password if required)
@@ -54,24 +65,23 @@ docker rm $(docker ps -q -f status=exited)
 # Remove all images
 docker rmi $(docker images -q)
 
+# Run a seperate shell in a container
+docker exec -it my_container_name bash
+
 # attach current shell/bash to running containers
+# Note: Please think about executina seperate shell in a container like shown above
 $ sudo docker attach loving_heisenberg #by Name
 ```
 
 **Remove all images**
 
-## Docker toolbox
+### Docker toolbox
 point docker-machine to the right virtualbox instance
 
 ```shell
 docker-machine env --shell cmd default
 ```
 
-## Docker Server Setups
-### nginx-proxy
+### Docker Server Setups
+#### nginx-proxy
 [nginx-proxy](https://hub.docker.com/r/jwilder/nginx-proxy/) is a neat way to manage multiple applications on the same server. Docker makes sure that each application can work with its own platform serving stack while the nginx-proxy docker container makes sure that the different containers all get their related traffic.
-
-
-# Links
-Some commands:  
-http://stackoverflow.com/questions/17665283/how-does-one-remove-an-image-in-docker
