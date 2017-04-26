@@ -5,6 +5,7 @@ Nginx is a lightweight, easy to configure host software and we recommend it for 
 1. fast
 1. stable
 1. feature-rich
+1. not as bloated as apache
 
 ## Negative
 1. configuration
@@ -13,7 +14,11 @@ Nginx is a lightweight, easy to configure host software and we recommend it for 
 Nginx is good and fast at what it does: handling traffic. The configuration should not be done manually though.
 This is why we wrote coretraffic, a tool that handles configuration for you and even supports reverse config handling for docker clusters :) and automatic LetsEncrypt certificate retrieval.
 
-## Some handy knowledge stuff
+## Watch and Learn
+
+## Links to learn more
+
+## Handy stuff
 
 ### nginx config for static content:
 Here is a bestpractice standard config file that will serve the site/ directory of your project:
