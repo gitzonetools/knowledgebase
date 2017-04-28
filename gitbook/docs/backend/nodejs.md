@@ -1,6 +1,14 @@
 # node.js
 **Node.js**, or simply **node**, is a JavaScript environment for server and desktop environments.
 
+## Positive
+
+## Negative
+
+## Watch and Learn
+
+## How we approach it at Lossless
+
 ## How to install
 ### nvm (Node Version Manager)
 

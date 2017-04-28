@@ -1,5 +1,22 @@
-## Bower
+# Bower
+bower is a registry and a cli tool to manage a project's frontend dependencies. Its most standout features are: It uses Git as server side storage + it has a flat dependency tree. It is mostly rendered obsolete with yarn's new ability do also install flatly. However project's like Polymer still rely on it.
 
+## Positive
+- Easy to understand/low level of complexity
+- based on git
+- easy to host privately
+
+## Negative
+- a little dated
+- authentication and deletion for the public registry only works with GitHub
+- community currently shifts to npm for everything
+
+## How we approach it at Lossless
+We publish all frontend components to both Bower and Npm. So when Bower finally shuts down the switch is easy.
+
+## Links to learn more
+
+## Handy stuff
 ### Install Bower
 bower is installed using npm:
 
