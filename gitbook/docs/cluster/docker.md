@@ -1,6 +1,7 @@
 # Docker
 
 ## Positive
+Docker is the most common container engine and format around. SUpport across major clouds is excellent.
 
 ## Negative
 
