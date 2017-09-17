@@ -1,8 +1,6 @@
 # Docker
 Docker is the most common container engine and format around. SUpport across major clouds is excellent.
 
-## Links to learn more
-
 ### Installing Docker
 Installing docker is fairly easy. Simply run the following command
 (The script will ask for your sudo password if required)
@@ -87,3 +85,4 @@ It comes preinstalled with a lot of handy stuff to make the most of your develop
 yarn global add npmdocker
 ```
 
+## Links to learn more
