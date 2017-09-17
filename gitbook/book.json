@@ -10,7 +10,7 @@
   ],
   "pluginsConfig": {
     "edit-link": {
-      "base": "https://gitlab.com/gitzone/knowledgebase.git.zone/edit/master/gitbook/",
+      "base": "https://gitlab.com/gitzone/kbase.git.zone/edit/master/gitbook/",
       "label": "contribute"
     },
     "disqus": {
