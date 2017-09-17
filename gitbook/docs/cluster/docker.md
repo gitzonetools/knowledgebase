@@ -3,13 +3,7 @@
 ## Positive
 Docker is the most common container engine and format around. SUpport across major clouds is excellent.
 
-## Negative
-
-## How we approach it at Lossless
-
 ## Links to learn more
-
-## Some handy stuff
 
 ### Installing Docker
 Installing docker is fairly easy. Simply run the following command
@@ -83,6 +77,15 @@ point docker-machine to the right virtualbox instance
 docker-machine env --shell cmd default
 ```
 
-### Docker Server Setups
-#### nginx-proxy
-[nginx-proxy](https://hub.docker.com/r/jwilder/nginx-proxy/) is a neat way to manage multiple applications on the same server. Docker makes sure that each application can work with its own platform serving stack while the nginx-proxy docker container makes sure that the different containers all get their related traffic.
+## Tools we wrote at Lossless
+
+### npmdocker
+npmdocker simplifies development of npm modules on your Mac or Linux machine.
+It comes preinstalled with a lot of handy stuff to make the most of your development experience
+
+#### Install it:
+
+```shell
+yarn global add npmdocker
+```
+
