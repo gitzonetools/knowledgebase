@@ -1,18 +1,9 @@
 # node.js
 **Node.js**, or simply **node**, is a JavaScript environment for server and desktop environments.
 
-## Positive
+### How to install
 
-## Negative
-
-## Watch and Learn
-
-## How we approach it at Lossless
-
-## How to install
-### nvm (Node Version Manager)
-
-To install NodeJS in a required version the easiest way is the node version manager.
+To install NodeJS in a required version the easiest way is the **node version manager**.
 
 **Install nvm:**  
 To install nvm use curl:
