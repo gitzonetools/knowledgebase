@@ -62,6 +62,9 @@ docker exec -it my_container_name bash
 # attach current shell/bash to running containers
 # Note: Please think about executina seperate shell in a container like shown above
 $ sudo docker attach loving_heisenberg #by Name
+
+# run bash in any image without using the original command
+docker run -it --entrypoint /bin/bash <image>
 ```
 
 **Remove all images**
