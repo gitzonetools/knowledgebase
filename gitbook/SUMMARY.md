@@ -1,6 +1,8 @@
 # Summary
 
 * [Start](index.md)
+* Lossless Runbooks
+    * [Servermanagement](docs/lossless-runbooks/servermanagement.md)
 * Ad Networks
     * [Carbon Ads](docs/backend/carbon_ads.md)
     * [Ad Sense](docs/backend/ad_sense.md)
