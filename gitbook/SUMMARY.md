@@ -13,8 +13,7 @@
 * Cluster
     * [Docker](docs/cluster/docker.md)
     * [Kubernetes](docs/cluster/kubernetes.md)
-* Code Management 
-    * [Bower](docs/code_management/bower.md)
+* Code Management
     * [Git](docs/code_management/git.md)
     * [Npm](docs/code_management/npm.md)
     * [Yarn](docs/code_management/yarn.md)
@@ -23,6 +22,7 @@
 * Database
     * [MongoDB](docs/database/mongodb.md)
     * [MySQL](docs/database/mysql.md)
+    * [RethinkDB](docs/databse/rethinkdb)
 * Frontend
     * [Angular](docs/frontend/angular.md) (> 2.x.x)
     * [Polymer](docs/frontend/polymer.md)
