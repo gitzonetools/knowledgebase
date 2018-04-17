@@ -4,8 +4,8 @@
 * Lossless Runbooks
     * [Servermanagement](docs/lossless-runbooks/servermanagement.md)
 * Ad Networks
-    * [Carbon Ads](docs/backend/carbon_ads.md)
-    * [Ad Sense](docs/backend/ad_sense.md)
+    * [Carbon Ads](docs/ad_networks/carbon_ads.md)
+    * [Ad Sense](docs/ad_networks/ad_sense.md)
 * Backend
     * [gulp](docs/backend/gulp.md)
     * [Nginx](docs/backend/nginx.md)
