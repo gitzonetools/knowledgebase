@@ -2,7 +2,7 @@
 
 * [Start](index.md)
 * Lossless Runbooks
-    * [Servermanagement](docs/lossless_runbooks/servermanagement.md)
+    * [Servermanagement](lossless_runbooks/servermanagement.md)
 * Ad Networks
     * [Carbon Ads](docs/ad_networks/carbon_ads.md)
     * [Ad Sense](docs/ad_networks/ad_sense.md)
