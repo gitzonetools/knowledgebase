@@ -16,3 +16,10 @@ hostnamectl set-hostname [YourName]
 ```shell
 curl -o- https://curlfresh.ship.zone/setup.sh | sh
 ```
+
+**join a universe**
+servers are managaged within universes. The universe decides what purpose a server will fullfill to join a universe run 
+
+```shell
+serverconfig join https://join.universe.[CompanyMangementDomain]/[JoinToken]
+```
