@@ -4,10 +4,8 @@
     "readme": "index.md"
   },
   "plugins": [
-    "disqus",
     "edit-link",
-    "gtm",
-    "youtube"
+    "gtm"
   ],
   "pluginsConfig": {
     "edit-link": {
