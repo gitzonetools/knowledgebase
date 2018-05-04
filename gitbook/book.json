@@ -14,9 +14,6 @@
       "base": "https://gitlab.com/gitzone/kbase.git.zone/edit/master/gitbook/",
       "label": "contribute"
     },
-    "disqus": {
-      "shortName": "knowledgebase-git-zone"
-    },
     "gtm": {
       "token": "GTM-WJNFFPC"
     }
