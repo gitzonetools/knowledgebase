@@ -29,6 +29,13 @@ exit
 ```
 > **Note:** the latest release for **docker-compose** is: [![GitHub version](https://badge.fury.io/gh/docker%2Fcompose.svg)](https://badge.fury.io/gh/docker%2Fcompose)
 
+### Things that are good to know when building containers
+
+````
+# adding things to path
+ENV PATH /root/.yarn/bin:$PATH
+```
+
 ### Managing containers
 There are various tools out there to take care of that. However if you just run a few containers it might be easier to just learn a few commands directly from docker.
 
