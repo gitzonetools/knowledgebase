@@ -4,8 +4,6 @@
     "readme": "index.md"
   },
   "plugins": [
-    "edit-link",
-    "gtm"
   ],
   "pluginsConfig": {
     "edit-link": {
