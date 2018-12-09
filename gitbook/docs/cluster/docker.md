@@ -72,6 +72,9 @@ $ sudo docker attach loving_heisenberg #by Name
 
 # run bash in any image without using the original command
 docker run -it --entrypoint /bin/bash <image>
+
+# find out why a particular service is not running
+docker service ps --no-trunc <servicename>
 ```
 
 **Remove all images**
