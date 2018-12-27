@@ -1,0 +1,19 @@
+{
+  "name": "kbase.git.zone",
+  "version": "1.0.0",
+  "description": "a knowledgebase by Lossless",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/gitzone/kbase.git.zone.git"
+  },
+  "author": "Lossless GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/gitzone/kbase.git.zone/issues"
+  },
+  "homepage": "https://gitlab.com/gitzone/kbase.git.zone#readme"
+}
