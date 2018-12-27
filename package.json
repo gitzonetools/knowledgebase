@@ -1,6 +1,6 @@
 {
   "name": "kbase.git.zone",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a knowledgebase by Lossless",
   "main": "dist/index.js",
   "scripts": {
