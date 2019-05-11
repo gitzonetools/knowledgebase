@@ -1,0 +1,738 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Docs for git.zone">
+      
+      
+        <link rel="canonical" href="https://docs.git.zone/stack-tooling/backend/gulp/">
+      
+      
+        <meta name="author" content="Lossless GmbH">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.2.0">
+    
+    
+      
+        <title>Gulp - Git.Zone Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.750b69bd.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500"
+    viewBox="0 0 500 500" id="__gitlab">
+  <g transform="translate(156.197863, 1.160267)">
+  	<path fill="currentColor"
+        d="M93.667,473.347L93.667,473.347l90.684-279.097H2.983L93.667,
+          473.347L93.667,473.347z" />
+  </g>
+  <g transform="translate(28.531199, 1.160800)" opacity="0.7">
+  	<path fill="currentColor"
+        d="M221.333,473.345L130.649,194.25H3.557L221.333,473.345L221.333,
+          473.345z" />
+  </g>
+  <g transform="translate(0.088533, 0.255867)" opacity="0.5">
+  	<path fill="currentColor"
+        d="M32,195.155L32,195.155L4.441,279.97c-2.513,7.735,0.24,16.21,6.821,
+          20.99l238.514,173.29 L32,195.155L32,195.155z" />
+  </g>
+  <g transform="translate(29.421866, 280.255593)">
+  	<path fill="currentColor"
+        d="M2.667-84.844h127.092L75.14-252.942c-2.811-8.649-15.047-8.649-17.856,
+          0L2.667-84.844 L2.667-84.844z" />
+  </g>
+  <g transform="translate(247.197860, 1.160800)" opacity="0.7">
+  	<path fill="currentColor"
+        d="M2.667,473.345L93.351,194.25h127.092L2.667,473.345L2.667,
+          473.345z" />
+  </g>
+  <g transform="translate(246.307061, 0.255867)" opacity="0.5">
+  	<path fill="currentColor"
+        d="M221.334,195.155L221.334,195.155l27.559,84.815c2.514,7.735-0.24,
+          16.21-6.821,20.99 L3.557,474.25L221.334,195.155L221.334,195.155z" />
+  </g>
+  <g transform="translate(336.973725, 280.255593)">
+  	<path fill="currentColor"
+        d="M130.667-84.844H3.575l54.618-168.098c2.811-8.649,15.047-8.649,
+          17.856,0L130.667-84.844 L130.667-84.844z" />
+  </g>
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#gulp" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://docs.git.zone" title="Git.Zone Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Git.Zone Docs
+            </span>
+            <span class="md-header-nav__topic">
+              Gulp
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://gitlab.com/gitzone/docs" title="Go to repository" class="md-source" data-md-source="gitlab">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__gitlab" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    gitzone/docs
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="Getting Started" class="md-tabs__link">
+        Getting Started
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../ad_networks/ad_sense/" title="Stack Tooling" class="md-tabs__link">
+          Stack Tooling
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../tools/tsrun/" title="TypeScript Tools" class="md-tabs__link">
+          TypeScript Tools
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://docs.git.zone" title="Git.Zone Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Git.Zone Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://gitlab.com/gitzone/docs" title="Go to repository" class="md-source" data-md-source="gitlab">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__gitlab" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    gitzone/docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Stack Tooling
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Stack Tooling
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Ad Networks
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Ad Networks
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ad_networks/ad_sense/" title="AdSense" class="md-nav__link">
+      AdSense
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ad_networks/carbon_ads/" title="Carbon Ads" class="md-nav__link">
+      Carbon Ads
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" checked>
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Backend
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        Backend
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Gulp
+      </label>
+    
+    <a href="./" title="Gulp" class="md-nav__link md-nav__link--active">
+      Gulp
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-positive" title="The Positive" class="md-nav__link">
+    The Positive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-negative" title="The Negative" class="md-nav__link">
+    The Negative
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#our-approach-at-lossless" title="Our Approach at Lossless" class="md-nav__link">
+    Our Approach at Lossless
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#watch-and-learn" title="Watch and Learn" class="md-nav__link">
+    Watch and Learn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links-to-learn-more" title="Links to learn more" class="md-nav__link">
+    Links to learn more
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nginx/" title="Nginx" class="md-nav__link">
+      Nginx
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      TypeScript Tools
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        TypeScript Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tools/tsrun/" title="tsrun" class="md-nav__link">
+      tsrun
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-positive" title="The Positive" class="md-nav__link">
+    The Positive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-negative" title="The Negative" class="md-nav__link">
+    The Negative
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#our-approach-at-lossless" title="Our Approach at Lossless" class="md-nav__link">
+    Our Approach at Lossless
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#watch-and-learn" title="Watch and Learn" class="md-nav__link">
+    Watch and Learn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links-to-learn-more" title="Links to learn more" class="md-nav__link">
+    Links to learn more
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="gulp">Gulp<a class="headerlink" href="#gulp" title="Permanent link">&para;</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">We don't use it anymore</p>
+<p>Gulp has a good idea: The usage of gulp-streams to automate build stuff. It is a lot of biolerplate however. We abandoned it as a result. Take a look at <a href="https://gitlab.com/pushrocks/smartgulp">smartgulp</a>, our small replacement that allows usage of gulp plugins in your own scripts without gulp.</p>
+</div>
+<p>Gulp is an awesome streaming build system built on nodejs. It utilizes node streams to deal with files in chunks. (Every file is one chunk).</p>
+<h2 id="the-positive">The Positive<a class="headerlink" href="#the-positive" title="Permanent link">&para;</a></h2>
+<ol>
+<li>A standard way of doing things</li>
+<li>Wide support by the community</li>
+<li>Easy to write and expandable</li>
+<li>Considerably easy on memory when handling thousands of files, since files move trough the pipeline at a complete maximum of 16 at one time. Only when a file/chunk leaves the pipeline a new one is picked up.  </li>
+</ol>
+<h2 id="the-negative">The Negative<a class="headerlink" href="#the-negative" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Tool sometimes seems stuck with an old inefiicient dependency tree</li>
+<li>Too much boilerplate: We usually like it maintainable and good by convention over configuration</li>
+</ol>
+<h2 id="our-approach-at-lossless">Our Approach at Lossless<a class="headerlink" href="#our-approach-at-lossless" title="Permanent link">&para;</a></h2>
+<ol>
+<li>We wrote a really lightweight gulp replacement called <a href="https://pushrocks.gitlab.io/smartgulp">smartgulp</a></li>
+<li>We compose streams with our own <a href="https://pushrocks.gitlab.io/smartstream">smartstream</a> that handles errors with feedback like a champ</li>
+<li>We take the pain out of plugins with our <a href="https://pushrocks.gitlab.io/gulp-function">gulp-function</a> plugins: With support for promises.</li>
+</ol>
+<h2 id="watch-and-learn">Watch and Learn<a class="headerlink" href="#watch-and-learn" title="Permanent link">&para;</a></h2>
+<h2 id="links-to-learn-more">Links to learn more<a class="headerlink" href="#links-to-learn-more" title="Permanent link">&para;</a></h2>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../ad_networks/carbon_ads/" title="Carbon Ads" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Carbon Ads
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../nginx/" title="Nginx" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Nginx
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2019 Lossless GmbH
+          </div>
+        
+        <a href="https://lossless.gmbh">Impressum</a> |
+<a href="https://lossless.gmbh/privacy">Privacy Policy</a> |
+<a href="https://lossless.support">Support</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
+    
+      <a href="https://git.zone" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://gitlab.com/gitzone" class="md-footer-social__link fa fa-gitlab"></a>
+    
+      <a href="https://twitter.com/git_zone" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.8c0d971c.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+  </body>
+</html>

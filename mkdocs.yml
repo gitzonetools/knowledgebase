@@ -1,0 +1,94 @@
+# Project information
+site_name: Git.Zone Docs
+site_description: Docs for git.zone
+site_author: Lossless GmbH
+site_url: https://docs.git.zone
+
+# Repository
+repo_name: gitzone/docs
+repo_url: https://gitlab.com/gitzone/docs
+edit_uri: ""
+
+# Copyright
+copyright: 'Copyright &copy; 2016 - 2019 Lossless GmbH'
+
+# Configuration
+theme:
+  name: material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  feature:
+    tabs: true
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/images/favicon.png
+  logo:
+    icon: "\uE80C"
+
+# Customization
+extra:
+  social:
+    - type: globe
+      link: https://git.zone
+    - type: gitlab
+      link: https://gitlab.com/gitzone
+    - type: twitter
+      link: https://twitter.com/git_zone
+
+# Extensions
+markdown_extensions:
+  - meta
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Getting Started: index.md
+  - Stack Tooling:
+    - Ad Networks:
+      - AdSense: stack-tooling/ad_networks/ad_sense.md
+      - Carbon Ads: stack-tooling/ad_networks/carbon_ads.md
+    - Backend:
+      - Gulp: stack-tooling/backend/gulp.md
+      - Nginx: stack-tooling/backend/nginx.md
+  - TypeScript Tools:
+    - tsrun: tools/tsrun.md
