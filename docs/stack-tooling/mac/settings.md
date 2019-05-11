@@ -1,4 +1,4 @@
-disable back and forth with 2 finger multitouch
+# Mac Management
 
 ```shell
 # disable mac back and forth

@@ -90,5 +90,7 @@ nav:
     - Backend:
       - Gulp: stack-tooling/backend/gulp.md
       - Nginx: stack-tooling/backend/nginx.md
+    - Mac:
+      - Settings: stack-tooling/mac/settings.md
   - TypeScript Tools:
     - tsrun: tools/tsrun.md
