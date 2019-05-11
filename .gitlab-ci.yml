@@ -1,0 +1,26 @@
+# gitzone standard
+image: hosttoday/ht-docker-node:npmci
+
+cache:
+  paths:
+  - .npmci_cache/
+  key: "$CI_BUILD_STAGE"
+
+stages:
+- metadata
+
+pages:
+  image: hosttoday/ht-docker-node:npmci
+  stage: metadata
+  script:
+    - echo "pages"
+  tags:
+    - docker
+    - notpriv
+  only:
+    - tags
+  artifacts:
+    expire_in: 1 week
+    paths:
+    - public
+  allow_failure: true
