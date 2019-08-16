@@ -58,7 +58,7 @@ server {
 ```
 
 ### nginx with Docker
-[Read on here](docker.md#nginxproxy) to get a neat nginx setup for docker containers.
+[Read on here](../cluster/docker.md#nginxproxy) to get a neat nginx setup for docker containers.
 
 ### fix permissions of serving directory
 this assumes that your nginx runs as user `www-data`

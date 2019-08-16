@@ -4,9 +4,9 @@
   "description": "a knowledgebase by Lossless",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "docker run --rm -it -p 8000:8000 -v ${PWD}:/docs mkdocs",
-    "publish": "rm -rf public/ && docker run --rm -it -p 8000:8000 -v ${PWD}:/docs mkdocs build && mv site public && gitzone commit"
+    "test": "echo \"no test specified\"",
+    "serve": "tsdoc --serve",
+    "publish": "tsdoc"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://gitlab.com/gitzone/kbase.git.zone/issues"
   },
-  "homepage": "https://gitlab.com/gitzone/kbase.git.zone#readme"
+  "homepage": "https://gitlab.com/gitzone/kbase.git.zone#readme",
+  "dependencies": {
+    "@gitzone/tsdoc": "^1.0.19"
+  }
 }

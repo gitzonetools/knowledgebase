@@ -14,7 +14,7 @@ If it complains about SSL try installing the ca-certificates package.
 
 Docker-Compose makes it easy to setup more complex configurations. It is highly recommended to install it.
 
-```
+```shell
 # Get permissions to install Docker Compose
 sudo -i
 
@@ -27,11 +27,12 @@ chmod +x /usr/local/bin/docker-compose
 # return to previous rights
 exit
 ```
+
 > **Note:** the latest release for **docker-compose** is: [![GitHub version](https://badge.fury.io/gh/docker%2Fcompose.svg)](https://badge.fury.io/gh/docker%2Fcompose)
 
 ### Things that are good to know when building containers
 
-````
+```
 # adding things to path
 ENV PATH /root/.yarn/bin:$PATH
 ```

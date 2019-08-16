@@ -90,6 +90,8 @@ nav:
     - Backend:
       - Gulp: stack-tooling/backend/gulp.md
       - Nginx: stack-tooling/backend/nginx.md
+    - Cluster:
+      - Docker: stack-tooling/cluster/docker.md
     - Mac:
       - Settings: stack-tooling/mac/settings.md
   - TypeScript Tools:
