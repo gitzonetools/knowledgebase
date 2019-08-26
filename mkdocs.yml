@@ -1,8 +1,12 @@
 # Project information
-site_name: Git.Zone Docs
-site_description: Docs for git.zone
+site_name: git.zone - knowledgebase
+site_description: knowledgebase for git.zone
 site_author: Lossless GmbH
-site_url: https://docs.git.zone
+site_url: https://docs.git.zone/
+
+# directories
+docs_dir: 'markdown'
+site_dir: 'public'
 
 # Repository
 repo_name: ""
@@ -10,7 +14,7 @@ repo_url: ""
 edit_uri: ""
 
 # Copyright
-copyright: 'Copyright &copy; 2016 - 2019 Lossless GmbH'
+copyright: 'Copyright &copy; 2014 - 2019 Lossless GmbH'
 
 # Configuration
 theme:
@@ -42,11 +46,11 @@ theme:
 extra:
   social:
     - type: globe
-      link: https://git.zone
+      link: https://layer.io
     - type: gitlab
-      link: https://gitlab.com/gitzone
+      link: https://gitlab.com/layer.io
     - type: twitter
-      link: https://twitter.com/git_zone
+      link: https://twitter.com/layer_io
 
 # Extensions
 markdown_extensions:
