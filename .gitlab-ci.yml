@@ -1,5 +1,5 @@
-# gitzone standard
-image: hosttoday/ht-docker-node:npmci
+# gitzone ci_default
+image: hosttoday/ht-docker-dbase:npmci
 
 cache:
   paths:
@@ -10,13 +10,16 @@ stages:
 - metadata
 
 pages:
-  image: hosttoday/ht-docker-node:npmci
+  image: hosttoday/ht-docker-dbase:npmci
+  services:
+   - docker:18-dind
   stage: metadata
   script:
-    - echo "pages"
+    - npmci npm install
+    - npmci command npm run build
   tags:
     - docker
-    - notpriv
+    - priv
   only:
     - tags
   artifacts:
