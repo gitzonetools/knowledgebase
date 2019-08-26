@@ -5,8 +5,8 @@ site_author: Lossless GmbH
 site_url: https://docs.git.zone
 
 # Repository
-repo_name: gitzone/docs
-repo_url: https://gitlab.com/gitzone/docs
+repo_name: ""
+repo_url: ""
 edit_uri: ""
 
 # Copyright
