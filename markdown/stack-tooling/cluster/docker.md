@@ -5,10 +5,29 @@ Docker is the most common container engine and format around. SUpport across maj
 Installing docker is fairly easy. Simply run the following command
 (The script will ask for your sudo password if required)
 
-    curl -sSL https://get.docker.com/ | sh
-    
+```shell
+curl -sSL https://get.docker.com/ | sh
+```
+
 If it prompts that you haven't yet installed curl, do so first and run the command above it again.  
 If it complains about SSL try installing the ca-certificates package.
+
+### Installing Docker in rootless mode
+The first thing we must do is install the sole dependency for this setup. That dependency is uidmap, which handles the user namespace mapping for the system.
+
+```shell
+# run as root
+apt-get install uidmap -y
+```
+
+That’s all there is for the dependencies.
+
+Installing Docker
+Next, we install Docker. We don’t want to go with the version found in the standard repository, as that won’t successfully run in rootless mode. Instead, we need to download a special installation script that will install rootless Docker. We can download and install the rootless version of docker with a single command:
+
+```shell
+curl -fsSL https://get.docker.com/rootless | sh
+```
 
 ### Installing Docker-Compose
 
@@ -32,7 +51,7 @@ exit
 
 ### Things that are good to know when building containers
 
-```
+```shell
 # adding things to path
 ENV PATH /root/.yarn/bin:$PATH
 ```
